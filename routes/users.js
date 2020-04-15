@@ -25,7 +25,7 @@ router.post('/list', function(req, res, next) {
         return res.send(500, {error: err});
       }
       console.log(persons, 'person, line 10');
-      res.send({'Clients':person})
+      res.send({'Clients':persons})
     });
 });
 
